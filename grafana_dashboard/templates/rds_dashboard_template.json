@@ -9,7 +9,7 @@
       "pluginName": "prometheus"
     }
   ],
-  "description": "【华为云RDS监控指标说明】https://support.huaweicloud.com/usermanual-rds/rds_06_0001.html",
+  "description": "【Huawei Cloud RDS Monitoring Metrics Description】https://support.huaweicloud.com/usermanual-rds/rds_06_0001.html",
   "editable": true,
   "fiscalYearStartMonth": 0,
   "gnetId": 8919,
@@ -41,7 +41,7 @@
       "id": 187,
       "panels": [],
       "repeat": "EPS",
-      "title": "资源总览（企业项目）企业项目：$EPS",
+      "title": "Resource Overview ( Enterprise Project ) Enterprise Project : $EPS",
       "type": "row"
     },
     {
@@ -63,7 +63,7 @@
       "styles": [
         {
           "$$hashKey": "object:1808",
-          "alias": "主机名",
+          "alias": "Hostname",
           "align": "auto",
           "colors": [
             "rgba(245, 54, 54, 0.9)",
@@ -83,7 +83,7 @@
         },
         {
           "$$hashKey": "object:1809",
-          "alias": "IP（链接到明细）",
+          "alias": "IP ( Link to Details )",
           "align": "auto",
           "colors": [
             "rgba(245, 54, 54, 0.9)",
@@ -94,7 +94,7 @@
           "decimals": 2,
           "link": true,
           "linkTargetBlank": false,
-          "linkTooltip": "浏览主机明细",
+          "linkTooltip": "Browse Host Details",
           "linkUrl": "",
           "mappingType": 1,
           "pattern": "dataVip",
@@ -104,7 +104,7 @@
         },
         {
           "$$hashKey": "object:1810",
-          "alias": "磁盘使用率",
+          "alias": "Disk Usage",
           "align": "auto",
           "colorMode": "cell",
           "colors": [
@@ -123,7 +123,7 @@
         },
         {
           "$$hashKey": "object:1814",
-          "alias": "CPU使用率",
+          "alias": "CPU Usage",
           "align": "auto",
           "colorMode": "cell",
           "colors": [
@@ -144,7 +144,7 @@
         },
         {
           "$$hashKey": "object:1815",
-          "alias": "内存使用率",
+          "alias": "Memory Usage",
           "align": "auto",
           "colorMode": "cell",
           "colors": [
@@ -165,7 +165,7 @@
         },
         {
           "$$hashKey": "object:1818",
-          "alias": "网络输入吞吐量",
+          "alias": "Network Input Throughput",
           "align": "auto",
           "colorMode": "cell",
           "colors": [
@@ -186,7 +186,7 @@
         },
         {
           "$$hashKey": "object:1819",
-          "alias": "网络输出吞吐量",
+          "alias": "Network Output Throughput",
           "align": "auto",
           "colorMode": "cell",
           "colors": [
@@ -207,7 +207,7 @@
         },
         {
           "$$hashKey": "object:1820",
-          "alias": "5min负载",
+          "alias": "5min Load",
           "align": "auto",
           "colors": [
             "rgba(245, 54, 54, 0.9)",
@@ -224,7 +224,7 @@
         },
         {
           "$$hashKey": "object:1821",
-          "alias": "连接数",
+          "alias": "Connection Count",
           "align": "auto",
           "colorMode": "cell",
           "colors": [
@@ -304,7 +304,7 @@
           "hide": false,
           "instant": true,
           "interval": "",
-          "legendFormat": "CPU使用率",
+          "legendFormat": "CPU Usage",
           "refId": "A"
         },
         {
@@ -314,7 +314,7 @@
           "hide": false,
           "instant": true,
           "interval": "",
-          "legendFormat": "内存使用率",
+          "legendFormat": "Memory Usage",
           "refId": "B"
         },
         {
@@ -324,7 +324,7 @@
           "hide": false,
           "instant": true,
           "interval": "",
-          "legendFormat": "磁盘使用率",
+          "legendFormat": "Disk Usage",
           "refId": "C"
         },
         {
@@ -334,7 +334,7 @@
           "hide": false,
           "instant": true,
           "interval": "",
-          "legendFormat": "总连接数",
+          "legendFormat": "Total Connection Count",
           "refId": "D"
         },
         {
@@ -344,7 +344,7 @@
           "hide": false,
           "instant": true,
           "interval": "",
-          "legendFormat": "网络输入吞吐量",
+          "legendFormat": "Network Input Throughput",
           "refId": "E"
         },
         {
@@ -354,12 +354,12 @@
           "hide": false,
           "instant": true,
           "interval": "",
-          "legendFormat": "网络输出吞吐量",
+          "legendFormat": "Network Output Throughput",
           "refId": "F"
         }
       ],
       "datasource": "${prometheus-cloudeye-exporter}",
-      "title": "RDS资源总览表【企业项目：$EPS，实例总数：$total】",
+      "title": "RDS Resource Overview Table 【 Enterprise Project : $EPS , Total Instances : $total 】",
       "transform": "table",
       "type": "table-old"
     },
@@ -375,7 +375,7 @@
       "id": 189,
       "panels": [],
       "repeat": "EPS",
-      "title": "资源明细：【$EPS】【$hostIP】【$hostname】",
+      "title": "Resource Details：【 $EPS 】【 $hostIP 】【 $hostname 】",
       "type": "row"
     },
     {
@@ -387,12 +387,12 @@
         "iowait": "#EAB839",
         "irq": "#BF1B00",
         "nice": "#C15C17",
-        "sdb_每秒I/O操作%": "#d683ce",
+        "sdb_Every Second I/O Operation %": "#d683ce",
         "softirq": "#E24D42",
         "steal": "#FCE2DE",
         "system": "#508642",
         "user": "#5195CE",
-        "磁盘花费在I/O操作占比": "#ba43a9"
+        "Disk Time Spent on I/O Operation Ratio": "#ba43a9"
       },
       "bars": false,
       "dashLength": 10,
@@ -446,7 +446,7 @@
       "seriesOverrides": [
         {
           "$$hashKey": "object:1605",
-          "alias": "/.*总使用率/",
+          "alias": "/.*Total Usage Rate/",
           "color": "#C4162A",
           "fill": 0
         }
@@ -464,14 +464,14 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{dataVip}}({{name}})-CPU使用率",
+          "legendFormat": "{{dataVip}}({{name}})-CPU Usage Rate",
           "refId": "A",
           "step": 20
         }
       ],
       "thresholds": [],
       "timeRegions": [],
-      "title": "CPU使用率",
+      "title": "CPU Usage Rate",
       "tooltip": {
         "shared": true,
         "sort": 2,
@@ -505,15 +505,15 @@
     },
     {
       "aliasColors": {
-        "192.168.200.241:9100_总内存": "dark-red",
-        "使用率": "yellow",
-        "内存_Avaliable": "#6ED0E0",
-        "内存_Cached": "#EF843C",
-        "内存_Free": "#629E51",
-        "内存_Total": "#6d1f62",
-        "内存_Used": "#eab839",
-        "可用": "#9ac48a",
-        "总内存": "#bf1b00"
+        "192.168.200.241:9100_Total Memory": "dark-red",
+        "Usage Rate": "yellow",
+        "Memory_Available": "#6ED0E0",
+        "Memory_Cached": "#EF843C",
+        "Memory_Free": "#629E51",
+        "Memory_Total": "#6d1f62",
+        "Memory_Used": "#eab839",
+        "Available": "#9ac48a",
+        "Total Memory": "#bf1b00"
       },
       "bars": false,
       "dashLength": 10,
@@ -566,7 +566,7 @@
       "seriesOverrides": [
         {
           "$$hashKey": "object:154",
-          "alias": "使用率",
+          "alias": "Usage Rate",
           "color": "rgb(0, 209, 255)",
           "lines": false,
           "pointradius": 1,
@@ -587,14 +587,14 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{dataVip}}({{name}})内存使用率",
+          "legendFormat": "{{dataVip}}({{name}})Memory Usage Rate",
           "refId": "A",
           "step": 4
         }
       ],
       "thresholds": [],
       "timeRegions": [],
-      "title": "内存使用率",
+      "title": "Memory Usage Rate",
       "tooltip": {
         "shared": true,
         "sort": 2,
@@ -631,16 +631,16 @@
     },
     {
       "aliasColors": {
-        "15分钟": "#6ED0E0",
-        "1分钟": "#BF1B00",
-        "5分钟": "#CCA300"
+        "15 Minutes": "#6ED0E0",
+        "1 Minute": "#BF1B00",
+        "5 Minutes": "#CCA300"
       },
       "bars": false,
       "dashLength": 10,
       "dashes": false,
       "datasource": "${prometheus-cloudeye-exporter}",
       "decimals": 2,
-      "description": "QPS:该指标用于统计SQL语句查询次数，含存储过程，以次/秒为单位。\nTPS:该指标用于统计事务执行次数，含提交的和回退的，以次/秒为单位。",
+      "description": "QPS: This metric is used to count the number of SQL statement queries, including stored procedures, in queries per second.\nTPS: This metric is used to count the number of transactions executed, including both commits and rollbacks, in transactions per second.",
       "editable": true,
       "error": false,
       "fieldConfig": {
@@ -692,7 +692,7 @@
       "seriesOverrides": [
         {
           "$$hashKey": "object:129",
-          "alias": "/.*总核数/",
+          "alias": "/.*Total Core Count/",
           "color": "#C4162A"
         }
       ],
@@ -824,13 +824,13 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{dataVip}}({{name}})-磁盘使用率（/）",
+          "legendFormat": "{{dataVip}}({{name}})-Disk Usage Rate(/)",
           "refId": "A"
         }
       ],
       "thresholds": [],
       "timeRegions": [],
-      "title": "磁盘使用率",
+      "title": "Disk Usage Rate",
       "tooltip": {
         "shared": true,
         "sort": 2,
@@ -873,12 +873,12 @@
         "iowait": "#EAB839",
         "irq": "#BF1B00",
         "nice": "#C15C17",
-        "sdb_每秒I/O操作%": "#d683ce",
+        "sdb_IO operations per second%": "#d683ce",
         "softirq": "#E24D42",
         "steal": "#FCE2DE",
         "system": "#508642",
         "user": "#5195CE",
-        "磁盘花费在I/O操作占比": "#ba43a9"
+        "Disk I/O Operation Ratio": "#ba43a9"
       },
       "bars": false,
       "dashLength": 10,
@@ -938,13 +938,13 @@
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": " {{dataVip}}({{name}})-磁盘I/O使用率（/）",
+          "legendFormat": "{{dataVip}}({{name}})-Disk I/O Usage Rate(/)",
           "refId": "A"
         }
       ],
       "thresholds": [],
       "timeRegions": [],
-      "title": "磁盘I/O使用率",
+      "title": "Disk I/O Usage Rate",
       "tooltip": {
         "shared": true,
         "sort": 2,
@@ -1047,14 +1047,14 @@
           "hide": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{dataVip}}({{name}})-磁盘读IOPS",
+          "legendFormat": "{{dataVip}}({{name}})-Disk Read IOPS",
           "refId": "A",
           "step": 10
         }
       ],
       "thresholds": [],
       "timeRegions": [],
-      "title": "磁盘读写速率（IOPS）",
+      "title": "Disk Read/Write Rate (IOPS)",
       "tooltip": {
         "shared": true,
         "sort": 2,
@@ -1093,7 +1093,7 @@
       "dashLength": 10,
       "dashes": false,
       "decimals": 2,
-      "description": "Read bytes 每个磁盘分区每秒读取的比特数\nWritten bytes 每个磁盘分区每秒写入的比特数",
+      "description": "Read bytes Number of bytes read per second per disk partition\nWritten bytes Number of bytes written per second per disk partition",
       "fieldConfig": {
         "defaults": {
           "links": []
@@ -1140,7 +1140,7 @@
       "seriesOverrides": [
         {
           "$$hashKey": "object:4199",
-          "alias": "/.*_读取$/",
+          "alias": "/.*_Read$/",
           "transform": "negative-Y"
         }
       ],
@@ -1155,7 +1155,7 @@
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{dataVip}}({{name}})-磁盘读吞吐量",
+          "legendFormat": "{{dataVip}}({{name}})-Disk Read Throughput",
           "refId": "A",
           "step": 10
         },
@@ -1166,14 +1166,14 @@
           "hide": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{dataVip}}({{name}})-磁盘写吞吐量",
+          "legendFormat": "{{dataVip}}({{name}})-Disk Write Throughput",
           "refId": "B",
           "step": 10
         }
       ],
       "thresholds": [],
       "timeRegions": [],
-      "title": "磁盘读写吞吐量",
+      "title": "Disk Read/Write Throughput",
       "tooltip": {
         "shared": true,
         "sort": 2,
@@ -1189,7 +1189,7 @@
         {
           "$$hashKey": "object:137",
           "format": "Bps",
-          "label": "读取（-）/写入（+）",
+          "label": "Read (-)/Write (+)",
           "logBase": 1,
           "show": true
         },
@@ -1259,7 +1259,7 @@
       "seriesOverrides": [
         {
           "$$hashKey": "object:3772",
-          "alias": "/,*_读取$/",
+          "alias": "/,*_Read$/",
           "transform": "negative-Y"
         }
       ],
@@ -1276,7 +1276,7 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{dataVip}}({{name}})-磁盘读耗时",
+          "legendFormat": "{{dataVip}}({{name}})-Disk Read",
           "refId": "A"
         },
         {
@@ -1287,13 +1287,13 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{dataVip}}({{name}})-磁盘写耗时",
+          "legendFormat": "{{dataVip}}({{name}})-Disk Write",
           "refId": "B"
         }
       ],
       "thresholds": [],
       "timeRegions": [],
-      "title": "磁盘读写耗时",
+      "title": "Disk Read/Write Latency",
       "tooltip": {
         "shared": true,
         "sort": 2,
@@ -1379,7 +1379,7 @@
       "seriesOverrides": [
         {
           "$$hashKey": "object:4199",
-          "alias": "/.*_读取$/",
+          "alias": "/.*_Read$/",
           "transform": "negative-Y"
         }
       ],
@@ -1394,7 +1394,7 @@
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{dataVip}}({{name}})-实时复制时延",
+          "legendFormat": "{{dataVip}}({{name}})-Realtime Replication Delay",
           "refId": "A",
           "step": 10
         },
@@ -1405,14 +1405,14 @@
           "hide": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{dataVip}}({{name}})-平均复制时延",
+          "legendFormat": "{{dataVip}}({{name}})-Average Replication Delay",
           "refId": "B",
           "step": 10
         }
       ],
       "thresholds": [],
       "timeRegions": [],
-      "title": "复制时延（平均+实时）",
+      "title": "Replication Delay (Average + Realtime)",
       "tooltip": {
         "shared": true,
         "sort": 2,
@@ -1514,7 +1514,7 @@
           "format": "time_series",
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{dataVip}}({{name}})-磁盘读吞吐量",
+          "legendFormat": "{{dataVip}}({{name}})-Disk Read Throughput",
           "refId": "A",
           "step": 10
         },
@@ -1525,14 +1525,14 @@
           "hide": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{dataVip}}({{name}})-磁盘写吞吐量",
+          "legendFormat": "{{dataVip}}({{name}})-Disk Write Throughput",
           "refId": "B",
           "step": 10
         }
       ],
       "thresholds": [],
       "timeRegions": [],
-      "title": "磁盘读写吞吐量",
+      "title": "Disk Read/Write Throughput",
       "tooltip": {
         "shared": true,
         "sort": 2,
@@ -1548,7 +1548,7 @@
         {
           "$$hashKey": "object:137",
           "format": "Bps",
-          "label": "读取（-）/写入（+）",
+          "label": "Read (-)/Write (+)",
           "logBase": 1,
           "show": true
         },
@@ -1641,14 +1641,14 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{dataVip}}({{name}})-慢日志个数统计",
+          "legendFormat": "{{dataVip}}({{name}})-Number of Slow Log Entries",
           "refId": "A",
           "step": 20
         }
       ],
       "thresholds": [],
       "timeRegions": [],
-      "title": "慢日志个数统计",
+      "title": "Number of Slow Log Entries",
       "tooltip": {
         "shared": true,
         "sort": 2,
@@ -1760,7 +1760,7 @@
           "instant": false,
           "interval": "",
           "intervalFactor": 1,
-          "legendFormat": "{{dataVip}}({{name}})-数据库总连接数",
+          "legendFormat": "{{dataVip}}({{name}})-Total Number of Database Connections",
           "refId": "A",
           "step": 20
         },
@@ -1770,7 +1770,7 @@
           "hide": false,
           "instant": false,
           "interval": "",
-          "legendFormat": "{{dataVip}}({{name}})-当前活跃连接数",
+          "legendFormat": "{{dataVip}}({{name}})-Current Active Connections",
           "refId": "B"
         },
         {
@@ -1779,7 +1779,7 @@
           "hide": false,
           "instant": false,
           "interval": "",
-          "legendFormat": "{{dataVip}}({{name}})-连接数使用率",
+          "legendFormat": "{{dataVip}}({{name}})-Connection Usage Rate",
           "refId": "C"
         },
         {
@@ -1787,13 +1787,13 @@
           "expr": "huaweicloud_sys_rds_rds_conn_active_usage{dataVip=~'$hostIP'}",
           "hide": false,
           "interval": "",
-          "legendFormat": "{{dataVip}}({{name}})-活跃连接数使用率",
+          "legendFormat": "{{dataVip}}({{name}})-Active Connection Usage Rate",
           "refId": "D"
         }
       ],
       "thresholds": [],
       "timeRegions": [],
-      "title": "网络连接信息",
+      "title": "Network Connection Information",
       "tooltip": {
         "shared": true,
         "sort": 2,
@@ -1816,7 +1816,7 @@
         {
           "$$hashKey": "object:4486",
           "format": "percent",
-          "label": "连接数使用率",
+          "label": "Connection Usage Rate",
           "logBase": 1,
           "min": "0",
           "show": true
@@ -1845,7 +1845,7 @@
         "definition": "huaweicloud_epinfo",
         "hide": 0,
         "includeAll": false,
-        "label": "企业项目",
+        "label": "Enterprise Project",
         "multi": false,
         "name": "EPS",
         "options": [],
@@ -1897,7 +1897,7 @@
         "definition": "label_values(huaweicloud_sys_rds_rds001_cpu_util{epId=~\"$EPS\",dataVip=~\"$hostIP\"},name)",
         "hide": 0,
         "includeAll": true,
-        "label": "实例名",
+        "label": "Instance Name",
         "multi": false,
         "name": "hostname",
         "options": [],
@@ -1965,8 +1965,8 @@
     ]
   },
   "timezone": "browser",
-  "title": "关系型数据库(RDS)",
-  "uid": "9CWBz0bi4",
+  "title": "Relational Database Service (RDS)",
+  "uid": "9CWBz0bi5",
   "version": 14,
   "weekStart": ""
 }
